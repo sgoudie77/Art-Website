@@ -1,8 +1,8 @@
 // Sticky Navbar
-window.addEventListener("scroll", function(){
-    const header = document.querySelector(".header");
-    header.classList.toggle("sticky", window.scrollY > 0);
-})
+// window.addEventListener("scroll", function(){
+//     const header = document.querySelector(".header");
+//     header.classList.toggle("sticky", window.scrollY > 0);
+// })
 
 // Menu Toggle for Responsive Design
 function toggleMenu(){
@@ -18,6 +18,7 @@ function toggleMenu(){
 var swiper = new Swiper('.swiper-container', {
     speed: 4000,
     spaceBetween: 30,
+    loop: true,
     // effect: 'fade',
     centeredSlides: true,
     autoplay: {
