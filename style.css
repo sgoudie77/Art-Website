@@ -321,7 +321,7 @@ html {
     font-weight: 200;
     letter-spacing: 2px;
     /* text-transform: uppercase; */
-    margin-top: 6rem;
+    margin-top: 2rem;
 }
 
 .gallery-area {
@@ -436,6 +436,54 @@ html {
     transition: 0.3s ease;
 }
 /* Gallery Section Styles End Here */
+
+/* categories start */
+.categories {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 80%;
+    height: 60vh;
+    /* background-color: white; */
+    margin-top: 2rem;
+}
+.category-box {
+    position: relative;
+    width: 24%;
+    height: 100%;
+    background-color: black;
+    /* border: 1px solid var(--clr-grey); */
+    margin: 0 5px;
+    transition: 0.3s ease;
+    opacity: 0.5;
+    filter: grayscale(1);
+}
+.category-box:hover {
+    opacity: 1;
+    filter: grayscale(0);
+    transition: 0.2s ease;
+    cursor: pointer;
+}
+.category-image h3 {
+    font-size: var(--fs-h3);
+    font-weight: 100;
+    letter-spacing: 1px;
+    text-align: center;
+    background-color: var(--clr-gold);
+    color: var(--clr-brown);
+}
+.category-box img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+/* categories end */
 
 /* Testimonials Styles Start Here */
 .testimonials {
@@ -685,10 +733,19 @@ html {
     width: 100%;
     height: 100%;
     min-height: 100vh;
+    color: var(--clr-white);
     background-color: var(--clr-blue);
 }
+
+.confirmation-text {
+    border: 1px solid var(--clr-grey);
+    padding: 3rem;
+    text-align: center;
+}
+
 .confirmation h1 {
     font-size: var(--fs-h1);
+    font-family: 'Lovers Quarrel';
     margin-bottom: 1rem;
     font-weight: 100;
 }
@@ -701,15 +758,20 @@ html {
     padding: 8px 12px;
     background-color: transparent;
     border: 1px solid var(--clr-grey);
+    margin-bottom: 1rem;
 }
 .confirmation button:hover {
     background-color: var(--clr-grey);
-    transition: 0.3s ease; 
+    transition: 0.5s ease; 
 }
 .confirmation button a {
     text-decoration: none;
     letter-spacing: 1px;
+    color: var(--clr-white);
+}
+.confirmation button a:hover {
     color: var(--clr-black);
+    transition: 0.5s ease;
 }
 /* confirnation page styles end here */
 
