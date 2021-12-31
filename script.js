@@ -60,3 +60,9 @@ var swiper = new Swiper('.swiper-container', {
 
 //     })
 // }
+
+// Gallery Lightbox
+let imageBox = document.querySelectorAll('.image-box');
+imageBox.forEach(popup => popup.addEventListener('click', () => {
+    popup.classList.toggle('active');
+}))
