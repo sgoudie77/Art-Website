@@ -1,6 +1,4 @@
 /* Global Styles Start Here */
-/* @import url('http://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap'); */
-/* @import url('https://fonts.googleapis.com/css2?family=Lovers+Quarrel&display=swap'); */
 @import url('https://fonts.googleapis.com/css2?family=Lovers+Quarrel&family=Poppins:ital,wght@0,400;0,600;0,700;0,900;1,400;1,600;1,700;1,900&display=swap');
 
 * {
@@ -28,6 +26,7 @@ html {
     --clr-green: #68be59;
     --clr-brown: #8c5e42;
     --clr-grey: #e0e0dc;
+    --clr-grey-tr: #e0e0dcb0;
     --clr-gold: #ebaf20;
     --clr-black: #000000;
     --clr-white: #ffffff;
@@ -48,14 +47,13 @@ html {
     display: flex;
     justify-content: space-between;
     width: 100%;
-    /* max-width: 100vw; */
-    padding-left: 3rem;
-    padding-right: 3rem;
+    padding-left: 8%;
+    padding-right: 8%;
     height: 6rem;
     align-items: center;
     position: fixed;
     z-index: 8;
-    background-color: var(--clr-grey);
+    background-color: var(--clr-grey-tr);
 }
 
 /* .header.sticky {
@@ -82,7 +80,7 @@ html {
 }
 
 .navbar ul li a:hover {
-    color: pink;
+    color: var(--clr-brown);
     transition: 0.3s ease;
 }
 
@@ -104,45 +102,56 @@ html {
     background-color: var(--clr-blue);
 }
 
-.hero-left, .hero-right {
+.hero.content .hero-bg {
     position: relative;
     display: flex;
-    width: 100%;
-    max-width: 100vw;
     justify-content: center;
-    align-items: center;
+    width: 85%;
+    height: 100vh;
+    background-image: url(img/beachBG.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-.hero-left {
-    flex-direction: column;
+.hero-bg::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(53, 79, 162, 0.8);
+    z-index: 2;
 }
 
 .hero-text {
     position: relative;
-    width: 100%;
+    width: 50%;
     height: auto;
     display: flex;
     flex-direction: column;
-    text-align: left;
     align-items: center;
     justify-content: center;
     color: var(--clr-white);
+    padding-left: 5rem;
+    z-index: 5;
 }
 
 .hero-text h1 {
-    font-size: 12rem;
+    font-size: 13.5rem;
     letter-spacing: 2px;
     font-weight: 200;
     font-family: 'Lovers Quarrel';
     margin-top: 5rem;
-    padding-left: 4rem;
 }
 
 .hero-text img {
     position: relative;
     filter: invert(1);
-    width: 25%;
-    margin-top: -4rem;
+    width: 40%;
+    margin-top: -4.5rem;
+    padding-left: 4.5rem;
     -moz-transform: scaleX(-1);
     -o-transform: scaleX(-1);
     -webkit-transform: scaleX(-1);
@@ -157,49 +166,152 @@ html {
     font-weight: 200;
     text-transform: uppercase;
     letter-spacing: 2.5px;
+    padding-right: 5rem;
 }
 
-#hero-btn {
-    margin-top: 1.5rem;
+.hero-text h3 {
+    width: 425px;
+    margin: 3rem 0;
+    line-height: 18px;
+    font-weight: 100;
+    letter-spacing: 2px;
+}
+
+.hero-btns {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.hero-btn {
+    width: 180px;
+    margin: 1rem 1.25rem;
     background: transparent;
     color: var(--clr-white);
     letter-spacing: 2px;
     padding: 0.9rem 1.4rem;
-    border: 1px solid var(--clr-white);
+    border: 1px solid var(--clr-grey);
     text-transform: uppercase;
-    margin-top: 2rem;
+    margin-top: 1rem;
+    border-radius: 10px;
 }
 
-#hero-btn:hover {
-    background: var(--clr-white);
-    color: purple;
+.hero-btn:hover {
+    background: var(--clr-grey);
+    color: var(--clr-blue);
     transition: 0.3s ease;
     cursor: pointer;
 }
 
-.hero-boxes {
+.hero-img {
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 50%;
+    z-index: 5;
 }
 
-.hero-item {
+.hero-img img {
+    height: 70vh;
+    padding-right: 5rem;
+} 
+/* Hero Section Styles End Here */
+
+/* Gallery Section Styles Start Here */
+.gallery {
     position: relative;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 150px;
-    height: 150px;
-    margin: 3rem 1rem;
+    color: white;
     background-color: var(--clr-grey);
 }
 
-.hero-right img {
-    height: 600px;
-    margin-top: 6rem;
+.gallery-bg {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 85%;
+    height: 100vh;
+    background-image: url(img/iceBG.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
-/* Hero Section Styles End Here */
+
+.gallery-bg::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(224, 224, 220, 0.8);
+    z-index: 2;
+}
+
+.gallery-title {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    color: var(--clr-blue);
+    z-index: 5;
+}
+
+.gallery-title h2 {
+    font-size: 6rem;
+    font-weight: 200;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin: 2rem 3.75rem;
+}
+
+.category-boxes {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 5;
+}
+
+.category-item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    height: 200px;
+    margin: 2rem 1.5rem;
+    z-index: 4;
+}
+
+.category-image {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    border: 1px solid var(--clr-blue);
+}
+
+.category-image img {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+}
+
+.category-item h3 {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 200;
+    letter-spacing: 2px;
+    color: var(--clr-blue);
+    margin-top: .5rem;
+}
+/* Gallery Section Styles End Here */
 
 /* About Section Styles Start Here */
 .about {
@@ -210,235 +322,95 @@ html {
     background-color: var(--clr-green);
 }
 
+.about-bg {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 85%;
+    height: 100vh;
+    background-image: url(img/iceBG02.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.about-bg::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(104, 190, 89, 0.8);
+    z-index: 2;
+}
+
+.about-image {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    z-index: 5;
+}
+
 .about-info {
     position: relative;
     display: flex;
     flex-direction: column;
-    width: 50vw;
     justify-content: center;
     align-items: center;
-    padding: 0 3rem;
+    width: 50%;
     color: var(--clr-white);
+    z-index: 5;
 }
 
-.about-info h2 {
-    font-size: 6rem;
-    font-family: 'Lovers Quarrel', sans-serif;
+.about-title {
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+}
+
+.about-title h2 {
+    font-size: var(--fs-h2);
     font-weight: 200;
     letter-spacing: 2px;
+    text-transform: uppercase;
 }
 
 .about-info p {
-    font-size: var(--fs-p);
-    font-weight: 200;
     letter-spacing: 2px;
-    line-height: 2.5rem;
-}
-
-.about-area {
-    position: relative;
-    width: 50vw;
-    max-width: 100%;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: auto;
-    grid-template-areas: 
-        "top top right"
-        "left middle right"
-        "left bottom bottom";
-    grid-gap: 10px;
+    line-height: 16px;
     padding-right: 3rem;
 }
 
-.box {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+#about-btn {
+    float: right;
+    width: 180px;
+    margin: 1rem 1.25rem;
+    background: transparent;
+    color: var(--clr-white);
+    letter-spacing: 2px;
+    padding: 0.9rem 1.4rem;
+    border: 1px solid var(--clr-grey);
+    text-transform: uppercase;
+    margin-top: 1rem;
+    border-radius: 10px;
+    margin-right: 6rem;
 }
 
-.top {
-    grid-area: top;
-    /* background-color: #ffffff; */
-    border: 1px solid #ffffff;
-}
-.top img {
-    height: 145px;
-}
-.right {
-    grid-area: right;
-    /* background-color: #ffffff; */
-    border: 1px solid #ffffff;
-
-}
-.right img {
-    height: 200px;
-}
-.bottom {
-    grid-area: bottom;
-    /* background-color: #ffffff; */
-    border: 1px solid #ffffff;
-
-}
-.bottom img {
-    height: 145px;
-}
-.left {
-    grid-area: left;
-    /* background-color: #ffffff; */
-    border: 1px solid #ffffff;
-    padding: 1rem;
-}
-.left img {
-    height: 200px;
-}
-.middle {
-    grid-area: middle;
-    /* background-color: #ffffff; */
-    border: 1px solid #ffffff;
-    padding: 1rem;
-}
-.middle img {
-    width: 100px;
+#about-btn:hover {
+    background: var(--clr-grey);
+    color: var(--clr-blue);
+    transition: 0.3s ease;
+    cursor: pointer;
 }
 /* About Section Styles End Here */
 
-/* Gallery Section Styles Start Here */
-.gallery {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    background-color: var(--clr-blue);
-    
-}
-
-.gallery-title h2 {
-    /* font-size: var(--fs-h2); */
-    font-size: 6rem;
-    font-family: 'Lovers Quarrel', sans-serif;
-    font-weight: 200;
-    letter-spacing: 2px;
-    /* text-transform: uppercase; */
-    margin-top: 2rem;
-}
-
-.gallery-area {
-    position: relative;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding: 20px;
-    margin: 0 auto;
-}
-
-.gallery-area ul {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    margin-bottom: 3rem;
-    font-size: var(--fs-h5);
-}
-
-.gallery-area ul li {
-    list-style: none;
-    background: transparent;
-    border: 1px solid var(--clr-light-gray);
-    padding: 1rem 1.4rem;
-    margin: 5px;
-    letter-spacing: 2px;
-    font-weight: 300;
-    cursor: pointer;
-    text-transform: uppercase;
-    border: 1px solid var(--clr-grey)
-}
-
-.gallery-area ul li:hover {
-    background-color: var(--clr-light-gray);
-    transition: 0.3s ease;
-}
-
-.gallery-area ul li.active {
-    background: var(--clr-blue);
-    border: 1px solid var(--clr-gold);
-    outline: none;
-    color: var(--clr-white);
-}
-
-.projects {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-.projects .project-box {
-    position: relative;
-    width: 200px;
-    height: 200px;
-    margin: 5px;
-    display: flex;
-    flex-direction: column;
-    background-color: var(--clr-grey);
-    justify-content: center;
-    align-items: center;
-}
-
-.projects .project-box.hide {
-    display: none;
-}
-
-.projects .project-box img {
-    position: relative;
-    /* width: 150px; */
-    height: 150px;
-    padding-top: .5rem;
-}
-
-.project-details {
-    margin-bottom: .5rem;
-    margin-top: .5rem;
-}
-
-.project-details p {
-    color: var(--clr-dark);
-    font-size: var(--fs-h5);
-    text-align: center;
-    padding: 0 1rem;
-}
-
-.project-links {
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    text-align: center;
-}
-
-.project-links a {
-    text-decoration: none;
-    color: var(--clr-blue);
-    letter-spacing: 1px;
-    font-size: 1.25rem;
-    font-weight: 400;
-    margin: 0 .25rem;
-    padding: 2px;
-    border: 1px solid var(--clr-light-gray);
-}
-
-.project-links a:hover {
-    background-color: var(--clr-light-gray);
-    font-weight: 400;
-    transition: 0.3s ease;
-}
-/* Gallery Section Styles End Here */
-
 /* categories start */
-.categories {
+/* .categories {
     position: relative;
     display: flex;
     flex-direction: row;
@@ -446,18 +418,14 @@ html {
     justify-content: center;
     width: 80%;
     height: 60vh;
-    /* background-color: white; */
     margin-top: 2rem;
 }
-/* .category-page-title h2 {
-    margin-top: 7rem;
-} */
+
 .category-box {
     position: relative;
     width: 24%;
     height: 100%;
     background-color: black;
-    /* border: 1px solid var(--clr-grey); */
     margin: 0 5px;
     transition: 0.3s ease;
     opacity: 0.5;
@@ -485,11 +453,30 @@ html {
     height: 100%;
     object-fit: cover;
     z-index: -1;
-}
-
+} */
 /* categories end */
 
 /* lightbox gallery pages styles start here */
+.gallery-items {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding-top: 12rem;
+    margin: 0 6rem;
+}
+
+.gallery-items img {
+    width: 250px;
+    margin: 1rem 2rem;
+}
+
+.gallery-items img:hover {
+    box-shadow: 2px 2px 2px 2px #000000a0;
+    transition: 0.2s ease;
+}
+
 .gallery-container {
     position: relative;
     display: flex;
@@ -501,13 +488,24 @@ html {
     width: 100%;
     max-width: 100vw;
     padding-top: 5rem;
-    /* padding-bottom: 2rem; */
+}
+
+.category-page-title {
+    position: relative;
+    display: flex;
 }
 
 .category-page-title h2 {
-    font-family: 'Lovers Quarrel';
+    /* font-family: 'Lovers Quarrel'; */
     font-size: var(--fs-h2);
-    /* font-weight: 500; */
+    font-weight: 200;
+    /* margin: 0 1rem; */
+    padding: 0 1rem;
+    border: 1px solid black;
+}
+
+.category-page-title .active-category {
+    background-color: yellow;
 }
 
 .category {
@@ -638,20 +636,52 @@ html {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: var(--clr-green);
+    background-color: var(--clr-grey);
+}
+
+.testimonials-bg {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 85%;
+    height: 100vh;
+    background-image: url(img/rockBG.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.testimonials-bg::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(224, 224, 220, 0.8);
+    z-index: 2;
+}
+
+.testimonials-title {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    color: var(--clr-blue);
+    z-index: 5;
 }
 
 .testimonials-title h2 {
-    /* font-size: var(--fs-h2); */
-    font-size: 6rem;
-    font-family: 'Lovers Quarrel', sans-serif;
+    font-size: 4rem;
     font-weight: 200;
     letter-spacing: 2px;
-    letter-spacing: 2px;
-    color: white;
+    margin: 1rem 2.5rem;
+    color: var(--clr-blue);
 }
 
-/* testimonial carousel styles start here*/
+  /* //testimonial carousel styles start here// */
 .carousel-card {
     position: relative;
     width: 65%;
@@ -664,7 +694,7 @@ html {
     margin: 0 auto;
     margin-top: 2rem;
     border-radius: 5px;
-    /* box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.5); */
+    z-index: 5;
   }
 .swiper-slide {
     position: relative;
@@ -672,7 +702,6 @@ html {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* background-color: var(--clr-grey); */
     background-color: transparent;
     
 }
@@ -684,8 +713,6 @@ html {
     height: 430px;
     align-items: center;
     border-radius: 6px;
-    /* box-shadow: 0px 1px 10px 1px #000; */
-    
 }
 .testimonial-upper {
     height: 40%;
@@ -740,9 +767,9 @@ html {
   
 .swiper-button-next,
 .swiper-button-prev {
-    color: #ffffff;
+    color: var(--clr-blue);
 }
-/* testimonial carousel styles end here*/
+  /* //testimonial carousel styles end here// */
 
 /* Testimonials Styles End Here */
 
@@ -756,24 +783,70 @@ html {
     width: 100%;
     height: auto;
     min-height: 100vh; 
-    background-color: var(--clr-blue);
-    padding-top: 12rem;
+    background-color: var(--clr-brown);
+}
+
+.contact-bg {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 85%;
+    height: 100vh;
+    background-image: url(img/sandBG.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.contact-bg::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(140, 94, 66, 0.8);
+    z-index: 2;
 }
 
 .contact-title {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
     color: var(--clr-white);
     text-align: center;
-    /* margin-bottom: 3rem; */
+    z-index: 5;
 }
-.contact-title h2 {
-    font-family: 'Lovers Quarrel';
+.contact-title-top {
+    position: relative;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.contact-title-top h2 {
     font-weight: 200;
+    text-transform: uppercase;
     font-size: var(--fs-h2);
+    margin: 1rem 2.5rem;
 }
-.contact-title p {
+
+.contact-title-info {
+    width: 68%;
+}
+
+.contact-title-info p {
     font-size: var(--fs-p);
     font-weight: 100;
     letter-spacing: 1px;
+}
+
+.contact-form {
+    z-index: 5;
 }
 .contact-form form {
     position: relative;
@@ -784,20 +857,24 @@ html {
     width: 100%;
     height: auto;
     padding: 2rem;
-    /* margin-bottom: 5rem; */
 }
 .input-box {
     position: relative;
     display: inline-flex;
-    width: 30%;
-    /* min-width: 25vw; */
+    width: 32.5%;
     margin: 5px 25px;
+}
+
+.input-box input {
+    border-radius: 10px;
+    
 }
 .input-box textarea {
     height: 100px;
+    border-radius: 10px;
 }
 .input-box.message {
-    width: 63.75%;
+    width: 70%;
 }
 .input-box input,
 .input-box textarea {
@@ -816,10 +893,11 @@ html {
     left: 0;
     padding: 5px 10px;
     font-size: var(--fs-f5);
+    text-transform: uppercase;
     margin: 12px 0;
     pointer-events: none;
     transition: 0.5s ease;
-    color: var(--clr-black);
+    color: var(--clr-brown);
     letter-spacing: 1px;
     font-weight: 200;
 }
@@ -855,61 +933,29 @@ html {
 
 /* footer Styles Start Here */
 .footer {
-    position: relative;
-    display: flex;
-    /* right: 0;
-    bottom: 0; */
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items: center;
-    height: 20vh;
-    background-color: var(--clr-grey);
-    width: 100%;
-    max-width: 100vw;
-}
-.footer-column {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    max-width: 100px; 
-    /* margin-top: .5rem; */
-}
-
-.footer-column h3 {
-    font-size: var(--fs-h3);
-    /* text-transform: uppercase; */
-    font-family: 'Lovers Quarrel';
-    font-weight: 200;
-    letter-spacing: 1px;
-    margin-bottom: 1rem;
-}
-
-.footer-column h3::before {
-    content: '';
     position: absolute;
-    bottom: 70px;
-    left: 0;
-    width: 45px;
-    height: 1px;
-    background: #000000;
-}
-
-.social-icons {
-    position: relative;
+    bottom: 0;
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 70px;
+    background-color: var(--clr-grey);
+    padding-left: 8%;
+    padding-right: 8%;
+    z-index: 99;
 }
 
-.footer-column i {
-    font-size: 3rem;
-    padding-right: .8rem;
-    /* padding-bottom: .5rem; */
+.footer p {
+    margin: .25rem 0;
+}
+
+.footer img {
+    height: 40px;
 }
 /* footer Styles Start Here */
 
-/* confirnation page styles start here */
+/* confirmation page styles start here */
 .confirmation {
     position: relative;
     display: flex;
@@ -959,7 +1005,7 @@ html {
     color: var(--clr-black);
     transition: 0.5s ease;
 }
-/* confirnation page styles end here */
+/* confirmation page styles end here */
 
 /* Responsive Styles Start Here */
 /* Responsive Styles End Here */
