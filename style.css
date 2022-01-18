@@ -284,10 +284,10 @@ html {
     position: relative;
     display: flex;
     flex-direction: column;
-    width: 200px;
-    height: 200px;
+    width: 202px;
+    height: 202px;
     margin: 2rem 1.5rem;
-    z-index: 4;
+    z-index: 5;
 }
 
 .category-image {
@@ -295,6 +295,7 @@ html {
     height: 100%;
     border-radius: 10px;
     border: 1px solid var(--clr-blue);
+    /* object-fit: cover; */
 }
 
 .category-image img {
@@ -352,6 +353,15 @@ html {
     align-items: center;
     width: 50%;
     z-index: 5;
+    /* background-color: white; */
+}
+
+.about-image-box {
+    width: 70%;
+    height: 70%;
+    background-color: var(--clr-blue);
+    border-radius: 10px;
+    border: 1px solid var(--clr-grey);
 }
 
 .about-info {
@@ -684,8 +694,8 @@ html {
   /* //testimonial carousel styles start here// */
 .carousel-card {
     position: relative;
-    width: 65%;
-    height: 430px;
+    width: 80%;
+    height: 50%;
     overflow: hidden;
     display: block;
     justify-content: center;
@@ -703,18 +713,19 @@ html {
     justify-content: center;
     align-items: center;
     background-color: transparent;
-    
+    height: 100%;
 }
 .testimonial-card {
     position: relative;
     display: flex;
     flex-direction: column;
     width: 300px;
-    height: 430px;
+    height: 300px;
+    justify-content: center;
     align-items: center;
     border-radius: 6px;
 }
-.testimonial-upper {
+/* .testimonial-upper {
     height: 40%;
     width: 300px;
     background: yellow;
@@ -735,22 +746,26 @@ html {
     height: 100px;
     border-radius: 50%;
     border: 4px solid white;
-}
+} */
 .testimonial-card .testimonial-text {
-    height: 60%;
-    width: 300px;
-    background: white;
+    height: 250px;
+    width: 450px;
+    background: #c4c4c4;
     padding: 2rem;
     position: absolute;
     bottom: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    border-radius: 0 0 6px 6px;
+    align-items: center;
+    border-radius: 6px;
+    box-shadow: 1px 1px 1px 1px #000000a0;
+    text-align: center;
 }
 .swiper-slide h4 {
     font-size: var(--fs-h4);
     font-weight: 300;
+    color: var(--clr-blue);
 }
 
 .swiper-slide p {
@@ -758,10 +773,11 @@ html {
     letter-spacing: 1px;
     margin-top: 1rem;
     font-weight: 100;
+    color: var(--clr-blue);
 }
 
 .fa-quote-left, .fa-quote-right {
-    font-size: 2rem;
+    font-size: 1.5rem;
     margin: 0 .5rem;
 }
   
