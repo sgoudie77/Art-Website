@@ -1024,4 +1024,54 @@ html {
 /* confirmation page styles end here */
 
 /* Responsive Styles Start Here */
+@media (max-width: 768px) {
+.header .navbar ul {
+    display: none;
+  }
+  .toggle {
+      position: fixed;
+      right: 6rem;
+      width: 25px;
+      height: 25px;
+      cursor: pointer;
+      background: url(img/menu.png);
+      background-size: 30px;
+      background-position: center;
+      background-repeat: no-repeat;
+  }
+  .toggle.active {
+      position: fixed;
+      right: 6rem;
+      background: url(img/close.png);
+      background-size: 20px;
+      background-position: center;
+      background-repeat: no-repeat;
+      z-index: 99;
+  }
+  .header .navbar ul.navigation.active {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      background: var(--clr-blue);
+      z-index: 10;
+  }
+  .header .navbar ul.navigation.active li {
+      padding: 1.5rem;
+      font-size: 2rem;
+      letter-spacing: 2px;  
+  }
+  .header .navbar ul.navigation.active li a {
+      padding-left: 0;
+      color: var(--clr-white);
+  }
+  .header .navbar ul.navigation.active li a:hover {
+      color: var(--clr-brown);
+  }
+}
 /* Responsive Styles End Here */
