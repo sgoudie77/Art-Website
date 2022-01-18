@@ -1073,5 +1073,9 @@ html {
   .header .navbar ul.navigation.active li a:hover {
       color: var(--clr-brown);
   }
+
+  .ib-loading {
+      display: none;
+  }
 }
 /* Responsive Styles End Here */
