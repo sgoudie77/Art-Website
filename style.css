@@ -85,7 +85,7 @@ html {
 }
 
 .logo img {
-    width: 75px;
+    width: 100px;
     filter: invert(1);
 }
 /* Navbar and Header Styles End Here */
@@ -136,6 +136,8 @@ html {
     color: var(--clr-white);
     padding-left: 5rem;
     z-index: 5;
+
+    padding-top: 9rem;
 }
 
 .hero-text h1 {
@@ -148,16 +150,16 @@ html {
 
 .hero-text img {
     position: relative;
-    filter: invert(1);
-    width: 40%;
+    /* filter: invert(1); */
+    width: 80%;
     margin-top: -4.5rem;
-    padding-left: 4.5rem;
-    -moz-transform: scaleX(-1);
+    padding-left: 1.5rem;
+    /* -moz-transform: scaleX(-1);
     -o-transform: scaleX(-1);
     -webkit-transform: scaleX(-1);
     transform: scaleX(-1);
     filter: FlipH;
-    -ms-filter: "FlipH";
+    -ms-filter: "FlipH"; */
 }
 
 .hero-text h2 {
@@ -170,11 +172,13 @@ html {
 }
 
 .hero-text h3 {
+    font-size: var(--fs-h4);
     width: 425px;
     margin: 3rem 0;
-    line-height: 18px;
+    line-height: 30px;
     font-weight: 100;
     letter-spacing: 2px;
+    padding-left: 2rem;
 }
 
 .hero-btns {
@@ -191,13 +195,37 @@ html {
     color: var(--clr-white);
     letter-spacing: 2px;
     padding: 0.9rem 1.4rem;
-    border: 1px solid var(--clr-grey);
+    border: 2px solid var(--clr-grey);
     text-transform: uppercase;
     margin-top: 1rem;
     border-radius: 10px;
+
+    font-size: var(--fs-p);
 }
 
 .hero-btn:hover {
+    background: var(--clr-grey);
+    color: var(--clr-blue);
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.hero-btn-white {
+    width: 180px;
+    margin: 1rem 1.25rem;
+    background: var(--clr-white);
+    color: var(--clr-blue);
+    letter-spacing: 2px;
+    padding: 0.9rem 1.4rem;
+    border: 2px solid var(--clr-grey);
+    text-transform: uppercase;
+    margin-top: 1rem;
+    border-radius: 10px;
+
+    font-size: var(--fs-p);
+}
+
+.hero-btn-white:hover {
     background: var(--clr-grey);
     color: var(--clr-blue);
     transition: 0.3s ease;
@@ -210,11 +238,12 @@ html {
     justify-content: center;
     align-items: center;
     width: 50%;
+    padding-top: 5rem;
     z-index: 5;
 }
 
 .hero-img img {
-    height: 70vh;
+    height: 75vh;
     padding-right: 5rem;
 } 
 /* Hero Section Styles End Here */
@@ -266,10 +295,10 @@ html {
 
 .gallery-title h2 {
     font-size: 6rem;
-    font-weight: 200;
-    letter-spacing: 2px;
+    font-weight: 600;
+    letter-spacing: 5px;
     text-transform: uppercase;
-    margin: 2rem 3.75rem;
+    margin: 2rem 2rem;
 }
 
 .category-boxes {
@@ -278,6 +307,7 @@ html {
     justify-content: center;
     align-items: center;
     z-index: 5;
+    
 }
 
 .category-item {
@@ -288,6 +318,9 @@ html {
     height: 202px;
     margin: 2rem 1.5rem;
     z-index: 5;
+
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px 2px #000000a0;
 }
 
 .category-image {
@@ -307,10 +340,11 @@ html {
 .category-item h3 {
     text-align: center;
     text-transform: uppercase;
-    font-weight: 200;
+    font-weight: 600;
     letter-spacing: 2px;
     color: var(--clr-blue);
-    margin-top: .5rem;
+    font-size: 2rem;
+    margin-top: 1.5rem;
 }
 /* Gallery Section Styles End Here */
 
@@ -342,7 +376,7 @@ html {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(104, 190, 89, 0.8);
+    background-color: rgba(104, 190, 89, 0.9);
     z-index: 2;
 }
 
@@ -384,16 +418,21 @@ html {
 }
 
 .about-title h2 {
-    font-size: var(--fs-h2);
-    font-weight: 200;
-    letter-spacing: 2px;
+    /* font-size: var(--fs-h2); */
+    font-size: 6rem;
+    font-weight: 600;
+    letter-spacing: 5px;
     text-transform: uppercase;
 }
 
 .about-info p {
-    letter-spacing: 2px;
-    line-height: 16px;
+    font-size: var(--fs-h4);
+    letter-spacing: 1px;
+    line-height: 30px;
+    font-weight: 100;
     padding-right: 3rem;
+
+    margin-top: 1.5rem;
 }
 
 #about-btn {
@@ -404,11 +443,14 @@ html {
     color: var(--clr-white);
     letter-spacing: 2px;
     padding: 0.9rem 1.4rem;
-    border: 1px solid var(--clr-grey);
+    border: 2px solid var(--clr-grey);
     text-transform: uppercase;
-    margin-top: 1rem;
+    margin-top: 3rem;
     border-radius: 10px;
     margin-right: 6rem;
+
+    font-size: var(--fs-p);
+    font-weight: 800;
 }
 
 #about-btn:hover {
@@ -684,11 +726,15 @@ html {
 }
 
 .testimonials-title h2 {
-    font-size: 4rem;
+    font-size: 4.8rem;
     font-weight: 200;
     letter-spacing: 2px;
-    margin: 1rem 2.5rem;
+    margin: 1rem 4rem;
     color: var(--clr-blue);
+
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 5px;
 }
 
   /* //testimonial carousel styles start here// */
@@ -763,7 +809,7 @@ html {
     text-align: center;
 }
 .swiper-slide h4 {
-    font-size: var(--fs-h4);
+    font-size: var(--fs-h3);
     font-weight: 300;
     color: var(--clr-blue);
 }
@@ -774,6 +820,8 @@ html {
     margin-top: 1rem;
     font-weight: 100;
     color: var(--clr-blue);
+
+    margin-top: 2.5rem;
 }
 
 .fa-quote-left, .fa-quote-right {
@@ -845,9 +893,11 @@ html {
     align-items: center;
 }
 .contact-title-top h2 {
-    font-weight: 200;
+    font-weight: 600;
+    letter-spacing: 5px;
     text-transform: uppercase;
-    font-size: var(--fs-h2);
+    /* font-size: var(--fs-h2); */
+    font-size: 4.8rem;
     margin: 1rem 2.5rem;
 }
 
@@ -856,9 +906,10 @@ html {
 }
 
 .contact-title-info p {
-    font-size: var(--fs-p);
+    font-size: var(--fs-h4);
     font-weight: 100;
     letter-spacing: 1px;
+    line-height: 30px;
 }
 
 .contact-form {
@@ -908,14 +959,15 @@ html {
     position: absolute;
     left: 0;
     padding: 5px 10px;
-    font-size: var(--fs-f5);
+    /* font-size: var(--fs-f5); */
+    font-size: 12px;
     text-transform: uppercase;
     margin: 12px 0;
     pointer-events: none;
     transition: 0.5s ease;
     color: var(--clr-brown);
     letter-spacing: 1px;
-    font-weight: 200;
+    font-weight: 600;
 }
 .input-box input:focus ~ span,
 .input-box input:valid ~ span,
@@ -933,16 +985,17 @@ html {
     width: 100px;
     background: transparent;
     color: var(--clr-grey);
-    border: 1px solid var(--clr-grey);
+    border: 2px solid var(--clr-grey);
     cursor: pointer;
     font-size: 1.5rem;
-    font-weight: 100;
+    font-weight: 600;
+    text-transform: uppercase;
     letter-spacing: 1px;
     margin: 0 auto;
 }
 .input-box input[type="submit"]:hover {
     background: var(--clr-grey);
-    color: var(--clr-black);
+    color: var(--clr-brown);
     transition: 0.3s ease;
 }
 /* Contact Section Styles End Here */
@@ -964,6 +1017,7 @@ html {
 
 .footer p {
     margin: .25rem 0;
+    font-size: var(--fs-h5);
 }
 
 .footer img {
@@ -1058,7 +1112,8 @@ html {
       justify-content: center;
       align-items: center;
       flex-direction: column;
-      background: var(--clr-blue);
+      /* background: var(--clr-blue); */
+      background: #354fa2e0;
       z-index: 10;
   }
   .header .navbar ul.navigation.active li {
