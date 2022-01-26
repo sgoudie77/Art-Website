@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <title>Test Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- <link href="imagebox.min.css" rel="stylesheet"> -->
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/tobiasroeder/imagebox@1.2.0/dist/imagebox.ie.min.css"/> -->
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/tobiasroeder/imagebox@1.3.0/dist/imagebox.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/css/lightgallery.min.css" integrity="sha512-kwJUhJJaTDzGp6VTPBbMQWBFUof6+pv0SM3s8fo+E6XnPmVmtfwENK0vHYup3tsYnqHgRDoBDTJWoq7rnQw2+g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all 0.2s linear;
+} */
+    /* .gallerya {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: 0 auto;
+}
+.gallerya a {
+    height: 200px;
+    width: 200px;
+    margin: 20px;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 3px 5px #000;
+}
+.gallerya a img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.gallerya a img:hover {
+    transform: scale(1.2);
+}
+#lg-download {
+    display: none;
+}
+.lg-sub-html {
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+}
+.lg-sub-html h4 {
+    font-size: 4rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.lg-sub-html p {
+    font-size: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+} */
+    </style>
+</head>
+<body>
+
+    <!-- nav starts here -->
+    <div class="header">
+        <div class="logo">
+            <a href="index.html" class="logo"><img src="img/jackieDLogo.png" alt=""></a>
+        </div>
+        <div class="toggle" onclick="toggleMenu();"></div>
+        <div class="navbar">
+            <ul class="navigation">
+                <li><a href="index.html" onclick="toggleMenu();">Home</a></li>
+                <li><a href="index.html#gallery" onclick="toggleMenu();">Gallery</a></li>
+                <li><a href="index.html#about" onclick="toggleMenu();">About</a></li>
+                <li><a href="index.html#testimonials" onclick="toggleMenu();">Testimonials</a></li>
+                <li><a href="index.html#contact" onclick="toggleMenu();">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- nav ends here -->
+
+    <!-- category name sections starts here -->
+    <!-- <div class="category-page-title">
+        <h2 class="active-category">Signs</h2>
+        <h2>Crafts</h2>
+        <h2>Paintings</h2>
+        <h2>Cards</h2>
+    </div> -->
+    <!-- category name sections ends here -->
+
+    <!-- main starts here -->
+    <div class="gallerya" id="captions">
+        <a href="img/cards/CA-101.jpg" data-sub-html="Item Name and Number Text Here">
+            <img src="img/cards/CA-101.jpg" alt="">
+        </a>
+        <a href="img/cards/CA-102.jpg" data-sub-html="Item 2 Name and Number 2 Text Here">
+            <img src="img/cards/CA-102.jpg" alt="">
+        </a>
+        <a href="img/cards/CA-103.jpg" data-sub-html="Item 3 Name and Number 3 Text Here">
+            <img src="img/cards/CA-103.jpg" alt="">
+        </a>
+        <a href="img/cards/CA-104.jpg" data-sub-html="Item 4 Name and Number 4 Text Here">
+            <img src="img/cards/CA-104.jpg" alt="">
+        </a>
+        <a href="img/cards/CA-105.jpg" data-sub-html="Item 5 Name and Number 5 Text Here">
+            <img src="img/cards/CA-105.jpg" alt="">
+        </a>
+        <a href="img/cards/CA-106.jpg" data-sub-html="Item 6 Name and Number 6 Text Here">
+            <img src="img/cards/CA-106.jpg" alt="">
+        </a>
+    </div>
+    <!-- <div class="gallery-items">
+        <img src="img/cards/CA-101.jpg" data-imagebox="gallery" data-imagebox-src="img/cards/CA-101.jpg" data-imagebox-caption="gallery">
+        <img src="img/cards/CA-102.jpg" data-imagebox="gallery" data-imagebox-src="img/cards/CA-102.jpg" data-imagebox-caption="hello">
+        <img src="img/cards/CA-103.jpg" data-imagebox="gallery" data-imagebox-src="img/cards/CA-103.jpg" data-imagebox-caption="testing">
+        <img src="img/cards/CA-104.jpg" data-imagebox="gallery" data-imagebox-src="img/cards/CA-104.jpg" data-imagebox-caption="checking">
+        <img src="img/cards/CA-105.jpg" data-imagebox="gallery" data-imagebox-src="img/cards/CA-105.jpg" data-imagebox-caption="text info">
+        <img src="img/cards/CA-106.jpg" data-imagebox="gallery" data-imagebox-src="img/cards/CA-106.jpg" data-imagebox-caption="can go here">
+        <img src="img/cards/CA-107.jpg" data-imagebox="gallery" data-imagebox-src="img/cards/CA-107.jpg" data-imagebox-caption="edit">
+    </div> -->
+    <!-- main ends here -->
+
+    <!-- button area starts here -->
+    <div class="gallery-btns">
+        <button class="gallery-btn"><a href="index.html#gallery">Back to Gallery</a></button>
+        <button class="gallery-btn"><a href="index.html#contact">Place An Order</a></button>
+    </div>
+    <!-- button area ends here -->
+
+    <!-- footer area starts here -->
+    <!-- <div class="footer">
+        <div class="copyright">
+            <p>&copy; 2022 Jackie Doucette, all rights reserved</p>
+            <p>Website Design by Sean Goudie and Katja Moehl</p>
+        </div>
+        <div class="social-media">
+            <img src="img/fbIconBlue.png" alt="">
+        </div>
+    </div>     -->
+    <!-- footer area ends here -->
+
+    <!-- scripts start below -->
+    <!-- <script src="https://cdn.jsdelivr.net/gh/tobiasroeder/imagebox@1.2.0/dist/imagebox.ie.min.js"></script> -->
+    <!-- <script src="https://cdn.jsdelivr.net/gh/tobiasroeder/imagebox@1.3.0/dist/imagebox.min.js"></script> -->
+    <!-- <script src="imagebox.js"></script> -->
+    <!-- For IE & Edge -->
+    <!-- <script src="imagebox.ie.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/js/lightgallery.min.js" integrity="sha512-b4rL1m5b76KrUhDkj2Vf14Y0l1NtbiNXwV+SzOzLGv6Tz1roJHa70yr8RmTUswrauu2Wgb/xBJPR8v80pQYKtQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        lightGallery(document.querySelector('.gallerya'));
+        lightGallery(document.getElementById('captions'));
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>

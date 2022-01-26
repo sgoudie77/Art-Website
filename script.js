@@ -65,3 +65,7 @@ imageBox.forEach(popup => popup.addEventListener('click', () => {
     popup.classList.toggle('active');
 }))
 
+
+// LightGallery
+// lightGallery(document.querySelector('.gallerya'));
+// lightGallery(document.getElementById('captions'));
