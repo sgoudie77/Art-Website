@@ -7,14 +7,21 @@
     <meta name="format-detection" content="telephone=no">
     <title>Cards</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" /> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/css/lightgallery.min.css" integrity="sha512-kwJUhJJaTDzGp6VTPBbMQWBFUof6+pv0SM3s8fo+E6XnPmVmtfwENK0vHYup3tsYnqHgRDoBDTJWoq7rnQw2+g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- nav starts here -->
+
+<!-- Page Background -->
+<div class="gallery-page-bg"></div>
+    
+<!-- Page Container -->
+<div class="container gallery-page">
+
+    <!-- Navbar Starts Here -->
     <div class="header">
         <div class="logo">
-            <a href="index.html" class="logo"><img src="img/jackieDLogo.png" alt=""></a>
+            <a href="index.html" class="logo"><img src="img/jackieDNavBar.png" alt="logo"></a>
         </div>
         <div class="toggle" onclick="toggleMenu();"></div>
         <div class="navbar">
@@ -27,135 +34,63 @@
             </ul>
         </div>
     </div>
-    <!-- nav ends here -->
+    <!-- Navbar Ends Here -->
 
-    <!-- main starts here -->
-    <div class="gallery-container" id="home">
-
-        <!-- category lightbox gallery starts here -->
-        <div class="category-page-title">
-            <h2>Cards</h2>
-        </div>
-
-        <div class="category">
-
-            <!-- gallery item start -->
-            <div class="gallery-box">
-                <div class="image-box">
-                    <img src="img/cards/CA-102.jpg" alt="">
-                    <h4>Click Again To Close</h4>
-                    <div class="box-info">
-                        <h3>Item Name: Vintage Card</h3>
-                        <p>Item Code Number: CA-102</p>
-                    </div>
-                </div>
-            </div>
-            <!-- gallery item end -->
-            
-            <!-- gallery item start -->
-            <div class="gallery-box">
-                <div class="image-box">
-                    <img src="img/cards/CA-102.jpg" alt="">
-                    <h4>Click Again To Close</h4>
-                    <div class="box-info">
-                        <h3>Item Name: Vintage Card</h3>
-                        <p>Item Code Number: CA-102</p>
-                    </div>
-                </div>
-            </div>
-            <!-- gallery item end -->
-            
-            <!-- gallery item start -->
-            <div class="gallery-box">
-                <div class="image-box">
-                    <img src="img/cards/CA-102.jpg" alt="">
-                    <h4>Click Again To Close</h4>
-                    <div class="box-info">
-                        <h3>Item Name: Vintage Card</h3>
-                        <p>Item Code Number: CA-102</p>
-                    </div>
-                </div>
-            </div>
-            <!-- gallery item end -->
-            
-            <!-- gallery item start -->
-            <div class="gallery-box">
-                <div class="image-box">
-                    <img src="img/cards/CA-102.jpg" alt="">
-                    <h4>Click Again To Close</h4>
-                    <div class="box-info">
-                        <h3>Item Name: Vintage Card</h3>
-                        <p>Item Code Number: CA-102</p>
-                    </div>
-                </div>
-            </div>
-            <!-- gallery item end -->
-
-            <!-- gallery item start -->
-            <div class="gallery-box">
-                <div class="image-box">
-                    <img src="img/cards/CA-102.jpg" alt="">
-                    <h4>Click Again To Close</h4>
-                    <div class="box-info">
-                        <h3>Item Name: Vintage Card</h3>
-                        <p>Item Code Number: CA-102</p>
-                    </div>
-                </div>
-            </div>
-            <!-- gallery item end -->
-
-        </div>
-        <!-- category lightbox gallery ends here -->
-
+    <!-- Gallery Selectors Start Here -->
+    <div class="gallery-btns upper">
+        <a href="cards.html" class="active">Cards</a>
+        <a href="crafts.html">Crafts</a>
+        <a href="framed.html">Framed</a>
+        <a href="signs.html">Signs</a>
     </div>
-    <!-- main ends here -->
+    <!-- Gallery Selectors End Here -->
+
+    <!-- Gallery Items Start Here -->
+    <div class="gallery-main" id="captions">
+        <a href="img/cards/CA001.jpg" data-sub-html="Item Name and Number Text Here">
+            <img src="img/cards/CA001.jpg" alt="">
+        </a>
+        <a href="img/cards/CA001.jpg" data-sub-html="Item Name and Number Text Here">
+            <img src="img/cards/CA001.jpg" alt="">
+        </a>
+        <a href="img/cards/CA003.jpg" data-sub-html="Item 2 Name and Number 2 Text Here">
+            <img src="img/cards/CA003.jpg" alt="">
+        </a>
+        <a href="img/cards/CA004.jpg" data-sub-html="Item 3 Name and Number 3 Text Here">
+            <img src="img/cards/CA004.jpg" alt="">
+        </a>
+        <a href="img/cards/CA005.jpg" data-sub-html="Item 4 Name and Number 4 Text Here">
+            <img src="img/cards/CA005.jpg" alt="">
+        </a>
+    </div>
+    <!-- Gallery Items End Here -->
 
     <!-- button area starts here -->
-    <div class="gallery-btns">
-        <button class="gallery-btn"><a href="index.html#gallery">Back to Gallery</a></button>
-        <button class="gallery-btn"><a href="index.html#contact">Place An Order</a></button>
+    <div class="gallery-btns lower">
+        <a href="index.html#gallery">Go Back</a>
+        <a href="index.html#contact">Contact</a>
     </div>
-    <!-- button area ends here -->
+    <!-- Gallery Page Buttons End Here -->
 
-    <!-- footer area starts here -->
-        <!-- <div class="footer">
-            <div class="social-links footer-column">
-                <h3>Follow Me</h3>
-                <div class="social-icons">
-                    <i class="fa fa-facebook-square" aria-hidden="true"></i>
-                    <i class="fa fa-twitter-square" aria-hidden="true"></i>
-                    <i class="fa fa-instagram" aria-hidden="true"></i>
-                    <i class="fa fa-pinterest" aria-hidden="true"></i>
-                </div>
-            </div>
-            <div class="contact-info footer-column">
-                <h3>Contact Info</h3>
-                <p>123 Somewhere St.</p>
-                <p>City, Country</p>
-                <p>A1B 2C3</p>
-                <p>Tel: 123-456-7890</p>
-            </div>
-            <div class="products footer-column">
-                <h3>Categories</h3>
-                <p>Seaglass</p>
-                <p>Cards</p>
-                <p>Crafts</p>
-                <p>Seasonal</p>
-            </div>
-            <div class="design footer-column">
-                <h3>Design</h3>
-                <p>Website design by Katja and Sean</p>
-                <p>For inquiries, please contact us <a href="#">here</a>.</p>
-            </div>
-        </div> -->
-        <!-- footer area ends here -->
+    <!-- Footer Starts Here -->
+    <div class="footer-gallery">
+        <div class="copyright">
+            <p>&copy; 2022 Jackie Doucette, all rights reserved</p>
+            <p>Website Design by Sean Goudie and Katja Moehl</p>
+        </div>
+        <div class="social-media">
+            <a href="https://www.facebook.com/jackie.doucette.739" target="_blank"><img src="img/fbIconBlue.png" alt="facebook"></a>
+        </div>
+    </div>
+    <!-- Footer Ends Here -->
 
-    <!-- scripts start below -->
-    <script type="text/javascript">
-        let imageBox = document.querySelectorAll('.image-box');
-        imageBox.forEach(popup => popup.addEventListener('click', () => {
-            popup.classList.toggle('active');
-        }))
+</div>
+
+    <!-- Scripts Start Below -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/js/lightgallery.min.js" integrity="sha512-b4rL1m5b76KrUhDkj2Vf14Y0l1NtbiNXwV+SzOzLGv6Tz1roJHa70yr8RmTUswrauu2Wgb/xBJPR8v80pQYKtQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        lightGallery(document.querySelector('.gallery-main'));
+        lightGallery(document.getElementById('captions'));
     </script>
     <script src="script.js"></script>
 </body>
