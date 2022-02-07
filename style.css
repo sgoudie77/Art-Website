@@ -27,7 +27,7 @@ html {
     --clr-brown: #8c5e42;
     --clr-grey: #e0e0dc;
     --clr-grey-tr: #e0e0dcb0;
-    --clr-gold: #ebaf20;
+    /* --clr-gold: #ebaf20; */
     --clr-black: #000000;
     --clr-white: #ffffff;
 }
@@ -1276,6 +1276,11 @@ html {
     }
     .contact-title-info {
         width: 85%;
+    }
+    .contact-title-info p {
+        font-size: var(--fs-p);
+        line-height: 20px;
+        letter-spacing: 1px;
     }
     .input-box,
     .input-box.message {
