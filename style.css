@@ -629,7 +629,7 @@ html {
     position: relative;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-end;
     width: 85%;
     height: 100vh;
     background-image: url(img/sandBGSm.jpg);
@@ -658,6 +658,7 @@ html {
     width: 100%;
     color: var(--clr-white);
     text-align: center;
+    /* margin-top: -10rem; */
     z-index: 5;
 }
 
@@ -764,6 +765,7 @@ html {
 }
 
 .input-box input[type="submit"] {
+    position: relative;
     width: 100px;
     background: transparent;
     color: var(--clr-white);
@@ -774,6 +776,7 @@ html {
     text-transform: uppercase;
     letter-spacing: 1px;
     margin: 0 auto;
+    z-index: 5;
 }
 
 .input-box input[type="submit"]:hover {
@@ -785,9 +788,9 @@ html {
 
 /* Footer Styles Start Here */
 .footer {
-    position: absolute;
-    bottom: 0;
-    /* position: relative; */
+    /* position: absolute;
+    bottom: 0; */
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -795,6 +798,7 @@ html {
     height: auto;
     background-color: var(--clr-grey);
     padding: .5rem 1rem;
+    margin-top: 8rem;
     z-index: 99;
 }
 
@@ -1142,11 +1146,12 @@ html {
         flex-direction: column;
         width: 100%;
         height: auto;
-        padding-left: 4.5rem;
+        /* padding-left: 4.5rem; */
         margin-bottom: 2rem;
     }
     .hero-img img {
         width: 200px;
+        padding-right: 0;
     }
     .hero-btn,
     .hero-btn-white {
@@ -1179,14 +1184,12 @@ html {
         width: 100%;
         margin-top: 7rem;
     } 
-    .about-info {
-        width: 100%;
-    }
     .about-image img {
         height: 125px;
         width: auto;
     }
     .about-info {
+        width: 100%;
         padding-right: 0;
         margin-top: 1rem;
     }
@@ -1198,7 +1201,8 @@ html {
         margin-left: 0;
     }
     .about-text {
-        padding-left: 4.5rem;
+        position: relative;
+        padding-left: 3rem;
     }
     .about-text p {
         font-size: var(--fs-p);
@@ -1257,6 +1261,9 @@ html {
     .contact-title-top {
         flex-direction: column;
         margin-bottom: 2rem;
+    }
+    .footer {
+        margin-top: 5rem;
     }
 
     /* responsive lightbox */
