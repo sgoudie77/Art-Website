@@ -310,7 +310,6 @@ html {
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 5;
 }
 
 .category-item {
@@ -1142,7 +1141,7 @@ html {
         flex-direction: column;
         width: 100%;
         height: auto;
-        margin-bottom: 2rem;
+        margin-bottom: 1rem;
     }
     .hero-img img {
         width: 175px;
@@ -1177,10 +1176,10 @@ html {
     }
     .about-image {
         width: 100%;
-        margin-top: 7rem;
+        margin-top: 5rem;
     } 
     .about-image img {
-        height: 100px;
+        height: 120px;
         width: auto;
     }
     .about-info {
@@ -1266,6 +1265,9 @@ html {
     }
     .footer p {
         line-height: 12px;
+    }
+    .footer img {
+        height: 35px;
     }
 
     /* responsive lightbox */
