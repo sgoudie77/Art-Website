@@ -789,8 +789,6 @@ html {
 
 /* Footer Styles Start Here */
 .footer {
-    /* position: absolute;
-    bottom: 0; */
     position: relative;
     display: flex;
     align-items: center;
@@ -894,10 +892,6 @@ html {
     background-color: var(--clr-blue);
     color: var(--clr-white);
     transition: 0.3s ease;
-}
-
-.social-media {
-    cursor: pointer;
 }
 /* Gallery Page Styles End Here */
 
@@ -1166,7 +1160,7 @@ html {
         margin-bottom: 2rem;
     }
     .gallery-title h2 {
-        font-size: 3rem;
+        font-size: 2.5rem;
         margin: 0;
     }
     .category-image img {
@@ -1234,7 +1228,7 @@ html {
     }
     .testimonials-title h2,
     .contact-title h2 {
-        font-size: 3rem;
+        font-size: 2.5rem;
         margin: 0;
     }
     .carousel-card {
@@ -1249,6 +1243,7 @@ html {
 
     /* responsive contact */
     .contact-title-top {
+        flex-direction: column;
         margin-bottom: 1rem;
     }
     .contact-title-info {
@@ -1263,12 +1258,14 @@ html {
     .input-box.message {
         width: 84%;
     }
-    .contact-title-top {
-        flex-direction: column;
-        margin-bottom: 2rem;
+    .input-box textarea {
+        height: 75px;
     }
     .footer {
         margin-top: 1.5rem;
+    }
+    .footer p {
+        line-height: 12px;
     }
 
     /* responsive lightbox */
