@@ -1133,7 +1133,7 @@ html {
         padding-top: 0;
     }
     .hero-text img {
-        width: 65%;
+        width: 175px;
         margin-bottom: 1rem;
         padding-left: 0;
     }
@@ -1151,7 +1151,7 @@ html {
         margin-bottom: 2rem;
     }
     .hero-img img {
-        width: 200px;
+        width: 175px;
         padding-right: 0;
     }
     .hero-btn,
@@ -1186,13 +1186,16 @@ html {
         margin-top: 7rem;
     } 
     .about-image img {
-        height: 125px;
+        height: 100px;
         width: auto;
     }
     .about-info {
         width: 100%;
         padding-right: 0;
         margin-top: .5rem;
+    }
+    .about-info p {
+        padding-right: 2rem;
     }
     .about-title h2 {
         width: 100%;
@@ -1203,18 +1206,20 @@ html {
     }
     .about-text {
         position: relative;
-        padding-left: 3rem;
+        padding-left: 2rem;
+        padding-right: 0;
     }
     .about-text p {
         font-size: var(--fs-p);
         line-height: 20px;
         margin-top: .25rem;
+        letter-spacing: 1px;
     }
     .about-lower {
         margin-top: 0.5rem;
     }
     .about-lower img {
-        width: 80px;
+        width: 70px;
         margin-right: .5rem;
     }
     .about-lower a {
