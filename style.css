@@ -1134,7 +1134,7 @@ html {
         margin-bottom: 1rem;
         padding-left: 0;
     }
-    .hero-text h3 {
+    .hero-text h4 {
         width: 95%;
         line-height: 20px;
         font-size: var(--fs-h5);
@@ -1212,6 +1212,9 @@ html {
         font-size: var(--fs-p);
         line-height: 20px;
         letter-spacing: 1px;
+    }
+    .about-lower {
+        margin-right: 2rem;
     }
     .about-lower a {
         width: 115px;
