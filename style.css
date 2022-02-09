@@ -1005,7 +1005,7 @@ html {
 
 .confirmation-btn {
     width: 100%;
-    margin-top: 2rem;
+    margin-top: 2.5rem;
 }
 
 .confirmation-btn a {
@@ -1269,6 +1269,12 @@ html {
     }
     .footer img {
         height: 35px;
+    }
+    .confirmation-text {
+        width: 70%;
+    }
+    .confirmation-btn a {
+        font-size: 1rem;
     }
 
     /* responsive lightbox */
