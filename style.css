@@ -1235,9 +1235,9 @@ html {
         width: 100%;
     }
     .testimonial-card .testimonial-text {
-        width: 200px;
+        width: 190px;
     }
-    .testimonial-text h4 {
+    .testimonial-text h3 {
         font-size: var(--fs-h4);
     }
 
