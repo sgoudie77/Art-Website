@@ -1,5 +1,5 @@
 /* Global Styles Start Here */
-@import url('https://fonts.googleapis.com/css2?family=Lovers+Quarrel&family=Poppins:ital,wght@0,400;0,600;0,700;0,900;1,400;1,600;1,700;1,900&display=swap');
+@import url('http://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
 
 * {
     margin: 0;
@@ -15,14 +15,16 @@ html {
 
 :root {
     /* font-sizes */
-    --fs-h1: 4rem;
-    --fs-h2: 3.25rem;
+    --fs-h1: 6rem;
+    --fs-h2: 4.8rem;
     --fs-h3: 2rem;
     --fs-h4: 1.6rem;
     --fs-h5: 1.4rem;
-    --fs-p: 1.5rem;
+    --fs-h6: 1.2rem;
+    --fs-p: 1.6rem;
     /* colors */
     --clr-blue: #354fa2;
+    --clr-blue-tr: #354fa2e0;
     --clr-green: #68be59;
     --clr-brown: #8c5e42;
     --clr-grey: #e0e0dc;
@@ -148,30 +150,13 @@ html {
     padding-top: 9rem;
 }
 
-.hero-text h1 {
-    font-size: 13.5rem;
-    letter-spacing: 2px;
-    font-weight: 200;
-    font-family: 'Lovers Quarrel';
-    margin-top: 5rem;
-}
-
 .hero-text img {
     position: relative;
     width: 80%;
     padding-left: 1.5rem;
 }
 
-.hero-text h2 {
-    font-size: var(--fs-h3);
-    letter-spacing: 2px;
-    font-weight: 200;
-    text-transform: uppercase;
-    letter-spacing: 2.5px;
-    padding-right: 5rem;
-}
-
-.hero-text h3 {
+.hero-text h4 {
     font-size: var(--fs-h4);
     width: 425px;
     margin: 3rem 0;
@@ -298,11 +283,11 @@ html {
 }
 
 .gallery-title h2 {
-    font-size: 6rem;
+    font-size: var(--fs-h2);
     font-weight: 600;
     letter-spacing: 5px;
     text-transform: uppercase;
-    margin: 2rem 2rem;
+    margin: 2rem;
 }
 
 .category-boxes {
@@ -345,7 +330,7 @@ html {
     font-weight: 600;
     letter-spacing: 2px;
     color: var(--clr-blue);
-    font-size: 2rem;
+    font-size: var(--fs-h3);
     margin-top: 1.5rem;
 }
 /* Gallery Section Styles End Here */
@@ -410,6 +395,7 @@ html {
     justify-content: center;
     align-items: center;
     width: 50%;
+    height: auto;
     color: var(--clr-white);
     z-index: 5;
     padding-right: 6rem;
@@ -418,48 +404,45 @@ html {
 .about-title {
     position: relative;
     display: flex;
-    justify-content: flex-start;
-    align-items: center;
+    flex-direction: column;
+    justify-content: left;
     width: 100%;
+    align-items: flex-start;
+    width: 100%;
+    margin: 1.25rem 0;
+}
+
+.about-title img {
+    width: 185px;
 }
 
 .about-title h2 {
-    /* font-size: var(--fs-h2); */
-    font-size: 6rem;
+    font-size: var(--fs-h2);
     font-weight: 600;
     letter-spacing: 5px;
     text-transform: uppercase;
 }
 
 .about-info p {
-    font-size: var(--fs-h4);
+    font-size: var(--fs-p);
     letter-spacing: 1px;
     line-height: 30px;
     font-weight: 100;
     padding-right: 3rem;
-
-    margin-top: 1.5rem;
 }
 
 .about-lower {
     position: relative;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
-    margin-top: 2rem;
-}
-
-.about-lower img {
-    width: 200px;
-}
-
-.about-lower a {
-    text-decoration: none;
+    margin-top: 1rem;
 }
 
 .about-lower a {
     width: 180px;
     background: transparent;
+    text-decoration: none;
     color: var(--clr-white);
     letter-spacing: 2px;
     padding: 0.9rem 0;
@@ -468,7 +451,7 @@ html {
     border-radius: 10px;
     margin-right: 4rem;
     font-size: var(--fs-p);
-    font-weight: 800;
+    font-weight: bold;
     text-align: center;
 }
 
@@ -525,9 +508,8 @@ html {
 }
 
 .testimonials-title h2 {
-    font-size: 4.8rem;
-    font-weight: 200;
-    letter-spacing: 2px;
+    font-size: var(--fs-h2);
+    font-weight: 600;
     margin: 1rem 4rem;
     color: var(--clr-blue);
     text-transform: uppercase;
@@ -587,7 +569,7 @@ html {
     text-align: center;
 }
 
-.swiper-slide h4 {
+.swiper-slide h3 {
     font-size: var(--fs-h3);
     font-weight: 300;
     color: var(--clr-blue);
@@ -671,11 +653,10 @@ html {
 }
 
 .contact-title-top h2 {
+    font-size: var(--fs-h2);
     font-weight: 600;
     letter-spacing: 5px;
     text-transform: uppercase;
-    /* font-size: var(--fs-h2); */
-    font-size: 4.8rem;
     margin: 1rem 3.2rem;
 }
 
@@ -684,7 +665,7 @@ html {
 }
 
 .contact-title-info p {
-    font-size: var(--fs-h4);
+    font-size: var(--fs-p);
     font-weight: 100;
     letter-spacing: 1px;
     line-height: 30px;
@@ -729,6 +710,7 @@ html {
     width: 100%;
     padding: 5px 10px;
     font-size: var(--fs-p);
+    font-family: 'Poppins', sans-serif;
     margin: 10px 0;
     border: 1px solid var(--clr-grey);
     color: var(--clr-black);
@@ -741,8 +723,7 @@ html {
     position: absolute;
     left: 0;
     padding: 5px 10px;
-    /* font-size: var(--fs-f5); */
-    font-size: 12px;
+    font-size: 1.2rem;
     text-transform: uppercase;
     margin: 12px 0;
     pointer-events: none;
@@ -757,7 +738,6 @@ html {
 .input-box textarea:focus ~ span,
 .input-box textarea:valid ~ span {
     color: var(--clr-white);
-    /* font-size: var(--fs-h5); */
     font-size: 1rem;
     font-weight: 100;
     letter-spacing: 2px;
@@ -800,10 +780,11 @@ html {
     z-index: 99;
 }
 
-.footer p {
+.footer h6 {
     margin: .25rem 0;
-    font-size: var(--fs-h5);
+    font-size: var(--fs-h6);
     color: var(--clr-blue);
+    font-weight: 200;
 }
 
 .footer img {
@@ -1009,9 +990,10 @@ html {
 }
 
 .confirmation-text-inner h3 {
-    font-size: 3.25rem;
-    margin-bottom: 1rem;
+    font-size: var(--fs-h3);
     font-weight: 600;
+    letter-spacing: 2px;
+    margin-bottom: 1rem;
 }
 
 .confirmation-text-inner p {
@@ -1047,8 +1029,11 @@ html {
 
 /* Responsive Styles Start Here */
 @media (max-width: 1199px) {
+    .hero-img img {
+        width: 325px;
+        padding-right: 0;
+    }
     .gallery-title img,
-    .about-lower img,
     .testimonials-title img,
     .contact-title-top img {
         width: 150px;
@@ -1058,6 +1043,25 @@ html {
     }
     .category-item {
         margin: 1rem 1rem;
+    }
+    .about-image-box img {
+        width: 275px;
+    }
+    .about-title {
+        align-items: center;
+    }
+    .about-info {
+        padding-left: 1rem;
+    }
+    .about-info p {
+        padding-right: 1rem;
+    }
+    .about-lower {
+        justify-content: center;
+    }
+    .about-lower a {
+        margin-right: 0;
+        padding-right: 0;
     }
     .gallery-btns.upper a,
     .gallery-btns.lower a {
@@ -1145,7 +1149,6 @@ html {
     }
     .hero-img img {
         width: 175px;
-        padding-right: 0;
     }
     .hero-btn,
     .hero-btn-white {
@@ -1185,10 +1188,13 @@ html {
     .about-info {
         width: 100%;
         padding-right: 0;
-        margin-top: .5rem;
+        padding-left: 0;
     }
     .about-info p {
-        padding-right: 2rem;
+        padding-right: 1rem;
+    }
+    .about-title img {
+        width: 100px;
     }
     .about-title h2 {
         width: 100%;
@@ -1205,15 +1211,7 @@ html {
     .about-text p {
         font-size: var(--fs-p);
         line-height: 20px;
-        margin-top: .25rem;
         letter-spacing: 1px;
-    }
-    .about-lower {
-        margin-top: 0.5rem;
-    }
-    .about-lower img {
-        width: 70px;
-        margin-right: .5rem;
     }
     .about-lower a {
         width: 115px;
@@ -1263,8 +1261,8 @@ html {
     .footer {
         margin-top: 1.5rem;
     }
-    .footer p {
-        line-height: 12px;
+    .footer h6 {
+        line-height: 10px;
     }
     .footer img {
         height: 35px;
