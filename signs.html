@@ -12,12 +12,6 @@
 </head>
 <body>
 
-<!-- Page Background -->
-<div class="gallery-page-bg"></div>
-    
-<!-- Page Container -->
-<div class="container gallery-page">
-
     <!-- Navbar Starts Here -->
     <div class="header">
         <div class="logo">
@@ -35,48 +29,95 @@
         </div>
     </div>
     <!-- Navbar Ends Here -->
+    
+    <!-- Page Container -->
+    <div class="container gallery-page">
+        <!-- Page Background -->
+        <div class="gallery-page-bg">
 
-    <!-- Gallery Selectors Start Here -->
-    <div class="gallery-btns upper">
-        <a href="cards.html">Cards</a>
-        <a href="crafts.html">Crafts</a>
-        <a href="framed.html">Framed</a>
-        <a href="signs.html" class="active">Signs</a>
+        <!-- Gallery Selectors Start Here -->
+        <div class="gallery-btns upper">
+            <a href="cards.html">Cards</a>
+            <a href="crafts.html">Crafts</a>
+            <a href="framed.html">Framed</a>
+            <a href="signs.html" class="active">Signs</a>
+        </div>
+        <!-- Gallery Selectors End Here -->
+
+        <!-- Gallery Items Start Here -->
+        <div class="gallery-main" id="captions">
+            <a href="img/signs/SI001.jpg" data-sub-html="Title: You're Bacon Me crazy<br>Info: Acrylic on Wood">
+                <img src="img/signs/SI001.jpg" alt="">
+            </a>
+            <a href="img/signs/SI002.jpg" data-sub-html="Title: Shirley<br>Info: Custom Acrylic on Wood">
+                <img src="img/signs/SI002.jpg" alt="">
+            </a>
+            <a href="img/signs/SI003.jpg" data-sub-html="Title: Happiness Comes in Waves<br>Info: Acrylic on Wood">
+                <img src="img/signs/SI003.jpg" alt="">
+            </a>
+            <a href="img/signs/SI004.jpg" data-sub-html="Title: I Love You<br>Info: Acrylic on Wood">
+                <img src="img/signs/SI004.jpg" alt="">
+            </a>
+            <a href="img/signs/SI005.jpg" data-sub-html="Title: Welcome<br>Info: Mussel Shell & Seaglass">
+                <img src="img/signs/SI005.jpg" alt="">
+            </a>
+        </div>
+        <!-- Gallery Items End Here -->
+
+        <!-- Back To Top Button Start -->
+        <a href="#" class="top" title="back to top"><i class="fa fa-arrow-up"></i></a>
+        <!-- Back To Top Button End -->
+
+        </div>
     </div>
-    <!-- Gallery Selectors End Here -->
 
-    <!-- Gallery Items Start Here -->
-    <div class="gallery-main" id="captions">
-        <a href="img/signs/SI001.jpg" data-sub-html="Title: You're Bacon Me crazy<br>Info: Acrylic on Wood">
-            <img src="img/signs/SI001.jpg" alt="">
-        </a>
-        <a href="img/signs/SI002.jpg" data-sub-html="Title: Shirley<br>Info: Custom Acrylic on Wood">
-            <img src="img/signs/SI002.jpg" alt="">
-        </a>
-        <a href="img/signs/SI003.jpg" data-sub-html="Title: Happiness Comes in Waves<br>Info: Acrylic on Wood">
-            <img src="img/signs/SI003.jpg" alt="">
-        </a>
-        <a href="img/signs/SI004.jpg" data-sub-html="Title: I Love You<br>Info: Acrylic on Wood">
-            <img src="img/signs/SI004.jpg" alt="">
-        </a>
-        <a href="img/signs/SI005.jpg" data-sub-html="Title: Welcome<br>Info: Mussel Shell & Seaglass">
-            <img src="img/signs/SI005.jpg" alt="">
-        </a>
+    <!-- Prices Section Starts Here -->
+    <div class="container pricing">
+        <div class="price-bg">
+            <div class="price-title">
+                <img src="img/arrowWhiteLeft.png" alt="">
+                <h2>Pricing</h2>
+                <img src="img/arrowWhiteRight.png" alt="">
+            </div>
+            <div class="price-group-container">
+                <div class="price-group-col">
+                    <div class="price-group">
+                        <h3 class="price-group-name">Wooden Signs</h3>
+                        <p class="price-item">1 side $15</p>
+                        <p class="price-item">2 sides $20</p>
+                    </div>
+                    <div class="price-group">
+                        <h3 class="price-group-name">Shell Art</h3>
+                        <p class="price-item">$8.00 each or 3 for $20</p>
+                    </div>
+                </div>
+                <div class="price-group-col">
+                    <div class="price-group">
+                        <h3 class="price-group-name">Seaglass Art </h3>
+                        <p class="price-item"><em>(framing extra)</em></p>
+                        <p class="price-item">Small (5x7) starting at $25</p>
+                        <p class="price-item">Large (8x10 or other) starting at $50</p>
+                    </div>
+                    <div class="price-group">
+                        <h3 class="price-group-name">Cards</h3>
+                        <p class="price-item">$8.00 each or 3 for $20</p>
+                    </div>
+                </div>
+            </div>
+            <div class="price-logo">
+                <img src="img/price-logo.png" alt="">
+            </div>
+            
+            <!-- button area starts here -->
+            <div class="gallery-btns lower">
+                <a href="index.html#gallery">Go Back</a>
+                <a href="index.html#contact">Contact</a>
+            </div>
+            <!-- button area ends here -->
+
+        </div>
     </div>
-    <!-- Gallery Items End Here -->
-
-    <!-- Back To Top Button Start -->
-    <a href="#" class="top" title="back to top"><i class="fa fa-arrow-up"></i></a>
-    <!-- Back To Top Button End -->
-
-    <!-- button area starts here -->
-    <div class="gallery-btns lower">
-        <a href="index.html#gallery">Go Back</a>
-        <a href="index.html#contact">Contact</a>
-    </div>
-    <!-- Gallery Page Buttons End Here -->
-
-</div>
+    <!-- Prices Section Ends Here -->
 
     <!-- Scripts Start Below -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/js/lightgallery.min.js" integrity="sha512-b4rL1m5b76KrUhDkj2Vf14Y0l1NtbiNXwV+SzOzLGv6Tz1roJHa70yr8RmTUswrauu2Wgb/xBJPR8v80pQYKtQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>

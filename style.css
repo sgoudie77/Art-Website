@@ -46,16 +46,29 @@ html {
     height: 3rem;
     background: lightgray;
     bottom: 1.5rem;
-    left: 1.5rem;
+    right: 1.5rem;
     text-decoration: none;
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 1.5rem;
-    color: #333;
     border-radius: 50%;
+    border: 1px solid var(--clr-blue);
     box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1);
     z-index: 1000;
+    transition: 0.3s ease-in-out;
+  }
+  .top i {
+    color: var(--clr-blue);
+    transition: 0.3s ease-in-out;
+  }
+  .top:hover {
+    background: var(--clr-blue);
+    transition: 0.3s ease-in-out;
+  }
+  .top i:hover {
+    color: var(--clr-white);
+    transition: 0.3s ease-in-out;
   }
 /* Global Styles End Here */
 
@@ -792,6 +805,7 @@ html {
     justify-content: space-evenly;
     align-items: center;
     width: 100%;
+    /* padding-bottom: 2rem; this is used for the live site with ads on the bottom */
 }
 
 .footer-col {
@@ -863,15 +877,37 @@ html {
     color: var(--clr-blue);
     font-weight: 200;
 }
-
 /* .footer img {
     height: 40px;
 } */
 /* Footer Styles End Here */
 
 /* Gallery Page Styles Start Here */
+.gallery-page {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--clr-grey);
+}
+
 .gallery-page-bg {
-    position: fixed;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 85%;
+    min-height: 100vh;
+    height: auto;
+    background-image: url(img/rockBGLow.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* .gallery-page-bg {
+    position: relative;
     top: 0;
     left: 0;
     min-width: 85%;
@@ -888,7 +924,7 @@ html {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-}
+} */
 
 .gallery-page-bg::after {
     content: '';
@@ -898,11 +934,12 @@ html {
     width: 100%;
     height: 100%;
     background-color: rgba(224, 224, 220, 0.8);
+    z-index: 2;
 }
 
-.gallery-page {
+/* .gallery-page {
     background-color: var(--clr-grey);
-}
+} */
 
 .gallery-btns {
     position: relative;
@@ -919,7 +956,11 @@ html {
 }
 
 .gallery-btns.lower {
-    padding: 2rem 0 3rem 0;
+    padding: 1.5rem 0 3rem 0;   
+}
+
+.gallery-btns.lower a {
+    background-color: var(--clr-white);
 }
 
 .gallery-btns a {
@@ -952,13 +993,120 @@ html {
 }
 /* Gallery Page Styles End Here */
 
+/* Price Styles Start Here */
+.pricing {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--clr-green);
+}
+
+.price-bg {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 85%;
+    min-height: 100vh;
+    height: auto;
+    background-image: url(img/iceBG02Low.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 5rem;
+    flex-direction: column;
+    align-items: center;
+    color: var(--clr-black);
+    /* z-index: 400; */
+}
+
+.price-bg::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(104, 190, 89, 0.9);
+    z-index: 2;
+}
+
+.price-logo {
+    position: relative;
+    display: flex;
+    z-index: 5;
+}
+
+.price-logo img {
+    width: 175px;
+}
+
+.price-title {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    width: 100%;
+    color: var(--clr-white);
+    margin: .5rem 0;
+    z-index: 5;
+}
+
+.price-title img {
+    width: 185px;
+}
+
+.price-title h2 {
+    font-size: var(--fs-h2);
+    font-weight: 600;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    margin: 0 2rem;
+}
+
+.price-group-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.price-group-col {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 3rem;
+}
+
+.price-group {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--clr-white);
+    margin-bottom: 1rem;
+    z-index: 5;
+}
+.price-group h3 {
+    font-size: var(--fs-h3);
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+.price-group p {
+    font-size: var(--fs-p);
+}
+/* Price Styles End Here */
+
 /* LightGallery Below */
 .gallery-main {
     position: relative;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    width: 90%;
+    width: 95%;
     margin: 0 auto;
     padding-top: 1rem;
     transition: all 0.3s linear; 
@@ -1144,6 +1292,9 @@ html {
     .gallery-btns.lower a {
         margin-bottom: 1.5rem;
     }
+    .footer-wrapper {
+        padding-bottom: 4rem;
+    }
 } 
 
 @media (max-width: 991px) {
@@ -1321,7 +1472,11 @@ html {
         width: 190px;
     }
     .testimonial-text h3 {
-        font-size: var(--fs-h4);
+        font-size: var(--fs-h5);
+    }
+    .testimonial-text p {
+        margin-top: 1rem;
+        font-size: 1.25rem;
     }
 
     /* responsive contact */
@@ -1360,6 +1515,21 @@ html {
         font-size: 1rem;
     }
 
+    /* responsive price section */
+    .price-title {
+        flex-direction: column;
+        margin-bottom: 1.5rem;
+    }
+    .price-title h2 {
+        font-size: 2.5rem;
+    }
+    .price-title img {
+        width: 135px;
+    }
+    .price-group-container {
+        flex-direction: column;
+    }
+
     /* responsive lightbox */
     .ib-loading {
         display: none;
@@ -1367,10 +1537,6 @@ html {
 }
 
 @media (max-width: 512px) {
-    /* .footer-col-mid {
-        border-top: 1px solid var(--clr-blue);
-        border-bottom: 1px solid var(--clr-blue);
-    } */
     .footer-wrapper div:nth-of-type(3) {
         border-top: 1px solid var(--clr-blue);
         border-bottom: 1px solid var(--clr-blue);
