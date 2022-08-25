@@ -12,63 +12,67 @@
 </head>
 <body>
 
-    <!-- Navbar Starts Here -->
-    <div class="header">
-        <div class="logo">
-            <a href="index.html" class="logo"><img src="img/jackieDNavBarBlue.png" alt="logo"></a>
+    <!-- Gallery Section Container -->
+    <div class="container">
+            
+        <!-- Navbar Starts Here -->
+        <div class="header">
+            <div class="logo">
+                <a href="index.html" class="logo"><img src="img/jackieDNavBarBlue.png" alt="logo"></a>
+            </div>
+            <div class="toggle" onclick="toggleMenu();"></div>
+            <div class="navbar">
+                <ul class="navigation">
+                    <li><a href="index.html" onclick="toggleMenu();">Home</a></li>
+                    <li><a href="index.html#gallery" onclick="toggleMenu();">Gallery</a></li>
+                    <li><a href="index.html#about" onclick="toggleMenu();">About</a></li>
+                    <li><a href="index.html#testimonials" onclick="toggleMenu();">Reviews</a></li>
+                    <li><a href="index.html#contact" onclick="toggleMenu();">Contact</a></li>
+                </ul>
+            </div>
         </div>
-        <div class="toggle" onclick="toggleMenu();"></div>
-        <div class="navbar">
-            <ul class="navigation">
-                <li><a href="index.html" onclick="toggleMenu();">Home</a></li>
-                <li><a href="index.html#gallery" onclick="toggleMenu();">Gallery</a></li>
-                <li><a href="index.html#about" onclick="toggleMenu();">About</a></li>
-                <li><a href="index.html#testimonials" onclick="toggleMenu();">Reviews</a></li>
-                <li><a href="index.html#contact" onclick="toggleMenu();">Contact</a></li>
-            </ul>
-        </div>
-    </div>
-    <!-- Navbar Ends Here -->
-    
-    <!-- Page Container -->
-    <div class="container gallery-page">
-        <!-- Page Background -->
-        <div class="gallery-page-bg">
-
-        <!-- Gallery Selectors Start Here -->
-        <div class="gallery-btns upper">
-            <a href="cards.html" class="active">Cards</a>
-            <a href="crafts.html">Crafts</a>
-            <a href="framed.html">Framed</a>
-            <a href="signs.html">Signs</a>
-        </div>
-        <!-- Gallery Selectors End Here -->
-
-        <!-- Gallery Items Start Here -->
-        <div class="gallery-main" id="captions">
-            <a href="img/cards/CA001.jpg" data-sub-html="Title: Tis the Season & Deck the Halls<br>Info: Christmas Cards with Seaglass">
-                <img src="img/cards/CA001.jpg" alt="">
-            </a>
-            <a href="img/cards/CA002.jpg" data-sub-html="Title: Merry Christmas<br>Info: Christmas Card with Seaglass">
-                <img src="img/cards/CA002.jpg" alt="">
-            </a>
-            <a href="img/cards/CA003.jpg" data-sub-html="Title: Birthday Card<br>Info: Water colour & with Seaglass">
-                <img src="img/cards/CA003.jpg" alt="">
-            </a>
-            <a href="img/cards/CA004.jpg" data-sub-html="Title: Custom Birthday Card<br>Info: Vintage Dude - outside">
-                <img src="img/cards/CA004.jpg" alt="">
-            </a>
-            <a href="img/cards/CA005.jpg" data-sub-html="Title: Custom Birthday Card 2<br>Info: Vintage Dude - inside">
-                <img src="img/cards/CA005.jpg" alt="">
-            </a>
-        </div>
-        <!-- Gallery Items End Here -->
+        <!-- Navbar Ends Here -->
         
-        <!-- Back To Top Button Start -->
-        <a href="#" class="top" title="back to top"><i class="fa fa-arrow-up"></i></a>
-        <!-- Back To Top Button End -->
-         
-        </div>  
+        <!-- Gallery Section Background -->
+        <div class="container gallery-page">  
+            <div class="gallery-page-bg">
+
+            <!-- Gallery Selectors Start Here -->
+            <div class="gallery-btns upper">
+                <a href="cards.html" class="active">Cards</a>
+                <a href="crafts.html">Crafts</a>
+                <a href="framed.html">Framed</a>
+                <a href="signs.html">Signs</a>
+            </div>
+            <!-- Gallery Selectors End Here -->
+
+            <!-- Gallery Items Start Here -->
+            <div class="gallery-main" id="captions">
+                <a href="img/cards/CA001.jpg" data-sub-html="Title: Tis the Season & Deck the Halls<br>Info: Christmas Cards with Seaglass">
+                    <img src="img/cards/CA001.jpg" alt="">
+                </a>
+                <a href="img/cards/CA002.jpg" data-sub-html="Title: Merry Christmas<br>Info: Christmas Card with Seaglass">
+                    <img src="img/cards/CA002.jpg" alt="">
+                </a>
+                <a href="img/cards/CA003.jpg" data-sub-html="Title: Birthday Card<br>Info: Water colour & with Seaglass">
+                    <img src="img/cards/CA003.jpg" alt="">
+                </a>
+                <a href="img/cards/CA004.jpg" data-sub-html="Title: Custom Birthday Card<br>Info: Vintage Dude - outside">
+                    <img src="img/cards/CA004.jpg" alt="">
+                </a>
+                <a href="img/cards/CA005.jpg" data-sub-html="Title: Custom Birthday Card 2<br>Info: Vintage Dude - inside">
+                    <img src="img/cards/CA005.jpg" alt="">
+                </a>
+            </div>
+            <!-- Gallery Items End Here -->
+            
+            <!-- Back To Top Button Start -->
+            <a href="#" class="top" title="back to top"><i class="fa fa-arrow-up"></i></a>
+            <!-- Back To Top Button End -->
+            
+            </div>  
+        </div>
+
     </div>
 
     <!-- Prices Section Starts Here -->
@@ -118,7 +122,7 @@
         </div>
     </div>
     <!-- Prices Section Ends Here -->
-
+    
     <!-- Scripts Start Below -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/js/lightgallery.min.js" integrity="sha512-b4rL1m5b76KrUhDkj2Vf14Y0l1NtbiNXwV+SzOzLGv6Tz1roJHa70yr8RmTUswrauu2Wgb/xBJPR8v80pQYKtQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
